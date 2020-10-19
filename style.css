@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+	font-family: sans-serif;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+main {
+	height: 100vh;
+}
+
+aside {
+	background: turquoise;
+    height: 100vh;	
+	color: white;
+}
+
+aside p {
+	margin: 0;
+}
+
+#sidebar-header-title {
+	border-bottom: 1px solid white;
+}
+
+#sidebar-header {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 5px;
+	margin-top: 25px;
+}
+
+#sidebar-header span {
+	justify-self: end;
+	align-self: center;
+	font-size: 2rem;
+}
+
+#add-book-section {
+	width: 90%;
+	margin: 50px auto 0 auto;
+	padding: 0 5px;
+}
+
+#add-book-section h5{
+	text-align: center;
+}
+
+#add-book-section button {
+	margin: auto;
+	margin-top: 10px;
+	border: 0;
+	background: grey;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#add-book-section button:hover {
+	opacity: 0.5;
+}
+
+#search-icon {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 1.5vw;
+}
+
+#search-box {
+    padding: 5px 0 5px 30px;
+}
+
+label {
+	font-size: 0.9rem;
+}
+
+label, input:not([type="radio"]), button, textarea {
+	display: block;
+}
+
+label, input:not([type="radio"]), textarea {
+	width: 100%;
+}
+
+.radio-label {
+	display: inline;
+}
+
+.add-book-field {
+	margin-bottom: 5px;
+}
+
+nav {
+	border-bottom: 1px solid lightgrey;
+    padding: 10px 20px 10px 100px;
+}
+
+#recommended-books {
+	height: 30%;
+	border-bottom: 1px solid lightgrey;
+}
+
+h3 {
+	margin: 5px 0 5px 10px;
+}
+
+#recommended-books-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 90%;
+	padding: 10px;
+	grid-gap: 10px;
+
+}
+
+.recommended-book-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;   
+}
+
+#rec-item-1 {
+	background-image: url('https://erenow.net/common/the-devils-gentleman/the-devils-gentleman.files/image012.jpg');
+}
+
+#rec-item-2 {
+	background-image: url('https://static.theceomagazine.net/wp-content/uploads/2019/06/25155702/cq5dam.web_.1200.675-1100x619.jpeg');
+}
+
+.rec-book-title {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.rec-book-title, .recommended-book-item h4 {
+    display: inline-block;
+    background: black;
+}
+
+.recommended-book-item h4{
+    margin: 10px 0 5px 0;
+    font-size: 0.9rem;
+}
+
+.rec-book-desc {
+    margin-top: 15px 0 0 0;
+    font-size: 0.6rem;
+    font-style: italic;
+    display: block;
+    background: black;
+}
+
+.relative {
+	position: relative;	
+}
+
+.recommended-book-item {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+    padding: 0 20px 0 0;
+}
+
+.rec-thumb {
+	background: pink;
+	height: 95%;
+	width: 70%;
+	
+	position: absolute;
+	top: -10px;
+	left: 15px;
+}

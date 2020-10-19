@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Odin Project Library</title>
+  </head>
+  <body>
+	<div id="container">
+		<aside>
+			<div id="sidebar-header">
+				<span>&#128214;</span>
+				<div id="sidebar-header-title">
+					<p>My</p>
+					<p>Library</p>
+				</div>			
+			</div>
+			
+			<div id="add-book-section">
+				<h5>Add a new book to your collection.</h5>
+				
+				<p class="add-book-field">
+					<label>Title</label>
+					<input type="text" id="title" placeholder="Enter title here">
+				</p>
+				
+				<p class="add-book-field">
+					<label>Author</label>
+					<input type="text" id="author" placeholder="Enter author here">		
+				</p>
+
+				<p class="add-book-field">
+					<label>Pages</label>
+					<input type="number" id="pages" placeholder="Enter pages here">		
+				</p>
+
+				<p class="add-book-field">
+					<label>Description</label>
+					<textarea id="desc" rows="3" maxlength="120" placeholder="Enter a short description"></textarea>
+				</p>
+				
+				<p class="add-book-field">
+					<label>Have you read it?</label>
+					<input type="radio" id="yes" name="read-status" value="yes">
+					<label for="yes" class="radio-label">Yes</label>
+					<input type="radio" id="no" name="read-status" value="no">
+					<label for="no" class="radio-label">No</label>
+				</p>
+				
+				<button id="add-book-btn">Add book</button>
+			</div>
+		</aside>
+		
+		<main>
+			<nav>
+				<div class="relative">
+                        <input type="text" name="search-box" id="search-box" placeholder="Search for a book here"/>
+                        <img src="images/search.png" id="search-icon"/>
+                    </div>
+			</nav>
+			
+			<section id="recommended-books">
+				<h3>Recommended Books</h3>
+				
+				<div id="recommended-books-container">
+					<div class="recommended-book-item" id="rec-item-1">
+						<div class="relative">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1266541477l/391280.jpg" class="rec-thumb"/>
+						</div>
+						
+						<div>
+							<h4>The Devil's Gentleman</h4><br>
+                            <p class="rec-book-title">Harold Schechter - 551 pages</p>
+                            
+                            <p class="rec-book-desc">
+                                From renowned true-crime historian Harold Schechter, whom The Boston Book Review hails as “America’s principal chronicler of its greatest psychopathic killers,” comes the riveting exploration of a notorious, sensational New York City murder in the 1890s, the fascinating forensic science of an earlier age, and the explosively dramatic trial that became a tabloid sensation at the turn of the century. 
+                            </p>
+						</div>
+					</div>
+					
+					<div class="recommended-book-item"id="rec-item-2">
+						<div class="relative">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/41tmqEUIbSL._AC_SY400_.jpg" class="rec-thumb"/>
+						</div>
+						
+						<div>
+                            <h4>Bad Blood: Secrets and Lies in a Silicon Valley Startup</h4><br>
+                            <p class="rec-book-title">John Carreyrou - 339 pages</p>
+                            
+                            <p class="rec-book-desc">
+                                The full inside story of the breathtaking rise and shocking collapse of a multibillion-dollar startup, by the prize-winning journalist who first broke the story and pursued it to the end in the face of pressure and threats from the CEO and her lawyers.
+                            </p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	
+    <script src="myscript.js"></script>
+  </body>
+</html>
