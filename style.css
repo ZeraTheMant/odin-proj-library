@@ -38,6 +38,23 @@ a {
     transform: translateY(-50%);
 }
 
+#books-list {
+    padding: 30px 15px 10px 15px;
+}
+
+#books-list-outer-container {
+    display: none;
+}
+
+#books-list-inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.library-item {
+    border: 1px solid lightgrey;
+}
+
 ul {
     margin: 0;
     list-style: none;
@@ -153,13 +170,6 @@ h3 {
 
 }
 
-.recommended-book-item {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;   
-}
-
 #rec-item-1 {
 	background-image: url('https://erenow.net/common/the-devils-gentleman/the-devils-gentleman.files/image012.jpg');
 }
@@ -198,15 +208,27 @@ h3 {
 .recommended-book-item {
 	display: grid;
 	grid-template-columns: 0.5fr 1fr;
-    padding: 0 20px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;   
+    padding: 0 20px 0 0;  
+    grid-gap: 10px;
+}
+
+#recommended-books .rec-thumb {
+   	width: 70%; 
+    left: 15px;
 }
 
 .rec-thumb {
-	background: pink;
 	height: 95%;
-	width: 70%;
-	
 	position: absolute;
 	top: -10px;
-	left: 15px;
+
+}
+
+#books-list-inner-container .rec-thumb {
+    width: 100%;
+    left: 5px;
 }
