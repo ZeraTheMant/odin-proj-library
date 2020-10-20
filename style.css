@@ -44,11 +44,13 @@ a {
 
 #books-list-outer-container {
     display: none;
+    background: blue;
 }
 
 #books-list-inner-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .library-item {
@@ -229,6 +231,40 @@ h3 {
 }
 
 #books-list-inner-container .rec-thumb {
-    width: 100%;
+    width: 90%;
     left: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .library-item {
+        height: 100px;
+    }
+    
+    #books-list-inner-container .recommended-book-item {
+        grid-template-columns: 0.3fr 1fr;       
+    }
+    
+    #books-list-outer-container {
+        margin-top: 30px;
+    }
+    
+    #books-list-inner-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    aside {
+        height: 100%;
+    }
+    
+    #recommended-books-container {
+        display: block;
+    }
+    
+    #books-list-outer-container {
+        margin-top: 100px;
+    }
 }
