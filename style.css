@@ -44,7 +44,7 @@ a {
 
 #books-list-outer-container {
     display: none;
-    background: blue;
+
 }
 
 #books-list-inner-container {
@@ -112,7 +112,6 @@ ul {
 }
 
 #search-icon {
-    position: absolute;
     top: 5px;
     left: 8px;
     width: 1.5vw;
@@ -225,9 +224,40 @@ h3 {
 
 .rec-thumb {
 	height: 95%;
-	position: absolute;
 	top: -10px;
+}
 
+.absolute {
+	position: absolute;    
+}
+
+.book-btns {
+    width: 1.5vw;
+    right: 10px;
+    cursor: pointer;
+}
+
+.seen-book {
+    background: url('images/already-read.png');
+}
+
+.unseen-book {
+    background: url('images/unread.png');
+}
+
+.del-book {
+    background: url('images/delete.png');
+    top: 25px;
+}
+
+.seen-book, .unseen-book {
+    top: 5px;    
+}
+
+.seen-book, .unseen-book, .del-book {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
 }
 
 #books-list-inner-container .rec-thumb {

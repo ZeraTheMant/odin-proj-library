@@ -57,7 +57,7 @@
 			<nav>
 				<div class="relative">
                     <input type="text" name="search-box" id="search-box" placeholder="Search for a book here"/>
-                    <img src="images/search.png" id="search-icon"/>
+                    <img src="images/search.png" id="search-icon" class="absolute"/>
                 </div>
                 
                 <div id="right-nav">
@@ -79,7 +79,7 @@
 				<div id="recommended-books-container">
 					<div class="recommended-book-item" id="rec-item-1">
 						<div class="relative">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1266541477l/391280.jpg" class="rec-thumb"/>
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1266541477l/391280.jpg" class="rec-thumb absolute"/>
 						</div>
 						
 						<div>
@@ -94,7 +94,7 @@
 					
 					<div class="recommended-book-item"id="rec-item-2">
 						<div class="relative">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/41tmqEUIbSL._AC_SY400_.jpg" class="rec-thumb"/>
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/41tmqEUIbSL._AC_SY400_.jpg" class="rec-thumb absolute"/>
 						</div>
 						
 						<div>
@@ -113,22 +113,7 @@
                 <p id="empty-list-msg">The library is empty. There are no books to show.</p>
                 
                 <div id="books-list-outer-container">
-                    <div id="books-list-inner-container">
-                        <div class="recommended-book-item library-item">
-                            <div class="relative">
-                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1266541477l/391280.jpg" class="rec-thumb"/>
-                            </div>
-                            
-                            <div>
-                                <h4>The Devil's Gentleman</h4><br>
-                                <p class="rec-book-title">Harold Schechter - 551 pages</p>
-                                
-                                <p class="rec-book-desc">
-                                    From renowned true-crime historian Harold Schechter, whom The Boston Book Review hails as “America’s principal chronicl. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="books-list-inner-container"></div>
                 </div>
             </section>
 		</main>
